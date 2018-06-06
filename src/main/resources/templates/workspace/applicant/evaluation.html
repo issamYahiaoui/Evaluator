@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/master}">
+<head>
+
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row m-portlet m-portlet--mobile">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title" style="display: flex; justify-content: center; align-items: center;">
+                    <h3 class="m-portlet__head-text">
+                        Grille d'évaluation
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div th:include="workspace/applicant/partials/peda"></div>
+        </div>
+        <div class="col-lg-6">
+            <div th:include="workspace/applicant/partials/production"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div th:include="workspace/applicant/partials/encadrement"></div>
+        </div>
+
+        <div class="col-lg-6">
+            <div th:include="workspace/applicant/partials/responsability"></div>
+        </div>
+    </div>
+
+</div>

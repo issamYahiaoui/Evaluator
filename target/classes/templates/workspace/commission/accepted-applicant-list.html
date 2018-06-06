@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/master}">
+<head>
+
+</head>
+<body>
+<div layout:fragment="content" >
+
+
+    <div class="m-portlet m-portlet--mobile">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <h3 class="m-portlet__head-text">
+                        Liste des candidats
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="m-portlet__body">
+            <!--begin: Search Form -->
+            <div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30">
+                <div class="row align-items-center">
+                    <div class="col-xl-8 order-2 order-xl-1">
+                        <div class="form-group m-form__group row align-items-center">
+                            <div class="col-md-4">
+                                <div class="m-input-icon m-input-icon--left">
+                                    <input type="text" class="form-control m-input m-input--solid" placeholder="Search..." id="generalSearch">
+                                    <span class="m-input-icon__icon m-input-icon__icon--left">
+															<span>
+																<i class="la la-search"></i>
+															</span>
+														</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--end: Search Form -->
+            <!--begin: Datatable -->
+            <table class="m-datatable" id="html_table" width="100%">
+                <thead >
+                <tr>
+                    <th title="Field #1">
+                        ID
+                    </th>
+                    <th title="Field #2">
+                        Email
+                    </th>
+                    <th title="Field #3">
+                        Nom
+                    </th>
+                    <th title="Field #4">
+                        Prénom
+                    </th>
+                    <th title="Field #5">
+                        Etabliseement
+                    </th>
+                    <th title="Field #6">
+                        Commencer l'évaluation
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>
+                        16590-107
+                    </td>
+                    <td>
+                        Yahiaoui
+                    </td>
+                    <td>
+                        Issam
+                    </td>
+                    <td>
+                        ei_yahiaoui@esi.dz
+                    </td>
+                    <td>
+                        ESI-ALGER
+                    </td>
+
+                    <td>
+                        <a th:href="@{/commission/evaluate-applicant}" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
+															<span>
+																<i class="fa flaticon-bell"></i>
+																<span>
+																	évaluer
+																</span>
+															</span>
+                        </a>
+                    </td>
+                </tr>
+                    <tr>
+                        <td>
+                            16590-107
+                        </td>
+                        <td>
+                            setrerrahmane
+                        </td>
+                        <td>
+                            djallel
+                        </td>
+                        <td>
+                            ea_setrerrahmane@esi.dz
+                        </td>
+                        <td>
+                            ESI-ALGER
+                        </td>
+
+                        <td>
+                            <a th:href="@{/commission/evaluate-applicant}" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
+															<span>
+																<i class="fa flaticon-bell"></i>
+																<span>
+																	évaluer
+																</span>
+															</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            16590-107
+                        </td>
+                        <td>
+                            Amara
+                        </td>
+                        <td>
+                            Ziyad
+                        </td>
+                        <td>
+                            ez_amara@esi.dz
+                        </td>
+                        <td>
+                            ESI-ALGER
+                        </td>
+
+                        <td>
+                            <a th:href="@{/commission/evaluate-applicant}" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
+															<span>
+																<i class="fa flaticon-bell"></i>
+																<span>
+																	évaluer
+																</span>
+															</span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--end: Datatable -->
+        </div>
+    </div>
+
+    <div class="m-subheader ">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h3 class="m-subheader__title m-subheader__title--separator">
+                    Validation
+                </h3>
+                <ul class="m-subheader__breadcrumbs m-nav m-nav--inline">
+                    <li class="m-nav__item m-nav__item--home">
+                        <a href="#" class="m-nav__link m-nav__link--icon">
+                            <i class="m-nav__link-icon la la-home"></i>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">
+                        -
+                    </li>
+                    <li class="m-nav__item">
+                        <a href="" class="m-nav__link">
+											<span class="m-nav__link-text">
+												Dossiers des candidats
+											</span>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">
+                        -
+                    </li>
+                    <li class="m-nav__item">
+                        <a href="" class="m-nav__link">
+											<span class="m-nav__link-text">
+												Liste des candidats
+											</span>
+                        </a>
+                    </li>
+                    <li class="m-nav__separator">
+                        -
+                    </li>
+                    <li class="m-nav__item">
+                        <a href="" class="m-nav__link">
+											<span class="m-nav__link-text">
+												Flaticon Icons
+											</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="row"  style="display: flex ; justify-content: center; align-items: center">
+        <!--begin: Datatable -->
+        <!--end: Datatable -->
+    </div>
+
+
+
+</div>
+
+<style>
+
+</style>

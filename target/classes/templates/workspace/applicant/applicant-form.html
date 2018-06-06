@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/master}">
+<head>
+
+</head>
+<body>
+<div layout:fragment="content" >
+    <div class="row m-portlet m-portlet--mobile">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+                    <h3 class="m-portlet__head-text">
+                        Fiche de candidature
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="width: 100%">
+            <form th:action="@{/applicant/applicant-form}" method="post"
+
+            th:object="${application}"
+            >
+                <div class="form-group m-form__group row">
+                    <div class="col-lg-6">
+                        <label>
+                            Nom :
+                        </label>
+                        <input type="text" class="form-control m-input  m-input--air" placeholder="Entrez votre nom"
+                        th:field="*{name}"
+                        >
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="">
+                            Prénom:
+                        </label>
+                        <input type="text" class="form-control m-input" placeholder="Entrez votre Prénom"
+                               th:field="*{firstName}"
+                        >
+                    </div>
+                </div>
+                <div class="form-group m-form__group row">
+                    <div class="col-lg-6">
+                        <label>
+                            Nom de jeune fille :
+                        </label>
+                        <input type="text" class="form-control m-input  m-input--air" placeholder="Entrez le Nom de jeune fille"
+
+                        >
+                    </div>
+                    <div class="col-lg-6">
+                        <label>
+                            Numéro de téléphone :
+                        </label>
+                        <input type="text" class="form-control m-input" placeholder="Entrez votre Numéro de téléphone"
+                               th:field="*{phone}"
+                        >
+                    </div>
+                </div>
+                <div class="form-group m-form__group row">
+                    <div class="col-lg-6">
+                        <label >Specialité</label>
+                        <select class="form-control m-input m-input--air"
+
+                        >
+                            <option th:value="${spec.id}" th:each="spec : ${speciality}" th:text="${spec.getName()}"></option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <label >Etablissement</label>
+                        <select class="form-control m-input m-input--air"
+
+                        >
+                            <option th:value="${et.id}" th:each="et : ${etablissement}" th:text="${et.getName()}"></option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="form-group m-form__group row">
+
+                    <div class="col-lg-6">
+                        <label>
+                            Doctorat et l’habilitation universitaire :
+                        </label>
+                        <div class='input-group date m_datepicker_4_3' >
+                            <input type='text' class="form-control m-input  m-input--air" readonly placeholder="Sélectionner une date"
+                                   th:field="*{doctorat_habilitation_universitaire}"
+                            >
+                            <span class="input-group-addon">
+                                            <i class="la la-calendar-check-o"></i>
+                                        </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label>
+                            Attestation d’équivalence de doctorat d’Etat en cas de diplôme étranger :
+                        </label>
+                        <div class='input-group date m_datepicker_4_3' >
+                            <input type='text' class="form-control m-input  m-input--air" readonly placeholder="Sélectionner une date"
+                                   th:field="*{attestation_equivalence}"
+                            >
+                            <span class="input-group-addon">
+                                            <i class="la la-calendar-check-o"></i>
+                                        </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group m-form__group row">
+
+                    <div class="col-lg-6">
+                        <label>
+                            Doctorat d’Etat :
+                        </label>
+                        <div class='input-group date m_datepicker_4_3' >
+                            <input type='text' class="form-control m-input  m-input--air" readonly placeholder="Sélectionner une date"
+                                   th:field="*{date_doctorat_etat}"
+                            >
+                            <span class="input-group-addon">
+                          <i class="la la-calendar-check-o"></i>
+                       </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label>
+                            Date d’obtention du titre ou du diplôme d’accès au grade de MC classe A :
+                        </label>
+                        <div class='input-group date m_datepicker_4_3' >
+                            <input type='text' class="form-control m-input  m-input--air" readonly placeholder="Sélectionner une date"
+                                   th:field="*{date_displome_mca}"
+                            >
+                            <span class="input-group-addon">
+                                            <i class="la la-calendar-check-o"></i>
+                                        </span>
+                        </div>
+                    </div>
+                </div>
+                <br> <br>
+                <div class="m-portlet__foot m-portlet__foot--fit">
+                    <br>
+                    <div class="m-form__actions m-form__actions--right">
+                        <button type="submit" class="btn btn-success ">
+                            CONFIRMER
+                        </button>
+
+                        <button type="reset" class="btn btn-secondary">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="flash" th:text=" ${successMessage}" hidden>
+
+    </div>
+
+
+</div>
+

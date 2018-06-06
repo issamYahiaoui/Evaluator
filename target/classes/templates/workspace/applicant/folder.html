@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/master}">
+<head>
+
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="m-portlet m-portlet--info m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
+         data-portlet="true" id="m_portlet_tools_1" style="">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon">
+													<i class="flaticon-interface-7"></i>
+												</span>
+                    <h3 class="m-portlet__head-text">
+                        Dossier Administrative
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="" data-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Collapse">
+                            <i class="la la-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-portlet-tool="fullscreen" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Fullscreen">
+                            <i class="la la-expand"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="display: none;">
+            <div class="m-scrollable mCustomScrollbar _mCS_10 mCS-autoHide mCS_no_scrollbar" data-scrollbar-shown="true"
+                 data-scrollable="true" style="overflow: visible; height: 100%; max-height: 100%; position: relative;">
+                <div id="mCSB_10" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"
+                     style="max-height: 100%;">
+                    <div th:include="workspace/applicant/administratif"></div>
+                    <div id="mCSB_10_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_10_scrollbar mCS-minimal-info mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_10_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 30px; top: 0px; display: block; height: 0px; max-height: 40.875px;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="m-portlet m-portlet--success m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
+         data-portlet="true" id="m_portlet_tools_2" style="">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon">
+													<i class="flaticon-folder"></i>
+												</span>
+                    <h3 class="m-portlet__head-text">
+                        Dossier Scientifique et pédagogique
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="" data-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Collapse">
+                            <i class="la la-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-portlet-tool="fullscreen" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Fullscreen">
+                            <i class="la la-expand"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="display: none;">
+            <div class="m-scrollable mCustomScrollbar _mCS_10 mCS-autoHide mCS_no_scrollbar" data-scrollbar-shown="true"
+                 data-scrollable="true" style="overflow: visible; height: 100%; max-height: 100%; position: relative;">
+                <div id="mCSB_10" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"
+                     style="max-height: 100ù;">
+                    <div th:include="workspace/applicant/scientific-folder"></div>
+
+                    <div id="mCSB_10_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_10_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_10_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 50px; top: 0px; display: block; height: 0px; max-height: 40.875px;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="m-portlet m-portlet--warning m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
+         data-portlet="true" id="m_portlet_tools_3" style="">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon">
+													<i class="flaticon-folder-4"></i>
+												</span>
+                    <h3 class="m-portlet__head-text">
+                        Autres
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="" data-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Collapse">
+                            <i class="la la-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-portlet-tool="fullscreen" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Fullscreen">
+                            <i class="la la-expand"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="display: none;">
+            <div class="m-scrollable mCustomScrollbar _mCS_10 mCS-autoHide mCS_no_scrollbar" data-scrollbar-shown="true"
+                 data-scrollable="true" style="overflow: visible; height: 100%; max-height: 100%; position: relative;">
+                <div id="mCSB_10" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"
+                     style="max-height: 100%;">
+                    <div th:include="workspace/applicant/autres-folder"></div>
+                    <div id="mCSB_10_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_10_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_10_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 50px; top: 0px; display: block; height: 0px; max-height: 40.875px;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

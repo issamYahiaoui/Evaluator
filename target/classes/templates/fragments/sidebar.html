@@ -1,0 +1,154 @@
+<ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow " xmlns:th="http://www.w3.org/1999/xhtml"
+    xmlns:sec="http://www.w3.org/1999/xhtml">
+    <li class="m-menu__section">
+        <h4 class="m-menu__section-text">
+            Les Menus
+        </h4>
+        <i class="m-menu__section-icon flaticon-more-v3"></i>
+    </li>
+    <li sec:authorize="hasAuthority('APPLICANT')"
+     class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"
+        data-menu-submenu-toggle="hover">
+        <a th:href="@{/applicant/stats}" class="m-menu__link m-menu__toggle">
+            <i class="m-menu__link-icon flaticon-dashboard"></i>
+            <span class="m-menu__link-text">
+										Tableau de bord
+									</span>
+            <i class="m-menu__ver-arrow la la-angle-right"></i>
+        </a>
+
+    </li>
+    <li sec:authorize="hasAuthority('COMMISSION') || hasAuthority('ADMIN')"
+        class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"
+        data-menu-submenu-toggle="hover">
+        <a th:href="@{/admin/stats}" class="m-menu__link m-menu__toggle">
+            <i class="m-menu__link-icon flaticon-dashboard"></i>
+            <span class="m-menu__link-text">
+										Tableau de bord
+									</span>
+            <i class="m-menu__ver-arrow la la-angle-right"></i>
+        </a>
+
+    </li>
+    <li sec:authorize="hasAuthority('APPLICANT')"
+     class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"
+        data-menu-submenu-toggle="hover">
+        <a href="#" class="m-menu__link m-menu__toggle">
+            <i class="m-menu__link-icon flaticon-folder-4"></i>
+            <span class="m-menu__link-text">
+										Dépôt du dossier
+									</span>
+            <i class="m-menu__ver-arrow la la-angle-right"></i>
+        </a>
+        <div class="m-menu__submenu">
+            <span class="m-menu__arrow"></span>
+            <ul class="m-menu__subnav">
+                <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
+                    <a href="#" class="m-menu__link ">
+												<span class="m-menu__link-text">
+													Dépôt du dossier
+												</span>
+                    </a>
+                </li>
+                <li class="m-menu__item " aria-haspopup="true">
+                    <a th:href="@{/applicant/applicant-form}" class="m-menu__link ">
+                        <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                            <span></span>
+                        </i>
+                        <span class="m-menu__link-text">
+													Fiche de candidature
+												</span>
+                    </a>
+                </li>
+                <li class="m-menu__item " aria-haspopup="true">
+                    <a th:href="@{/applicant/folder}" class="m-menu__link ">
+                        <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                            <span></span>
+                        </i>
+                        <span class="m-menu__link-text">
+													Autres Dossiers
+												</span>
+                    </a>
+                </li>
+                <li class="m-menu__item " aria-haspopup="true">
+                    <a th:href="@{/applicant/evaluation}" class="m-menu__link ">
+                        <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                            <span></span>
+                        </i>
+                        <span class="m-menu__link-text">
+													Grille d'évaluation
+												</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </li>
+    <li sec:authorize="hasAuthority('COMMISSION') || hasAuthority('ADMIN')"
+        class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"
+        data-menu-submenu-toggle="hover">
+        <a href="#" class="m-menu__link m-menu__toggle">
+            <i class="m-menu__link-icon flaticon-suitcase"></i>
+            <span class="m-menu__link-text">
+										Validation du dossier
+									</span>
+            <i class="m-menu__ver-arrow la la-angle-right"></i>
+        </a>
+        <div class="m-menu__submenu">
+            <span class="m-menu__arrow"></span>
+            <ul class="m-menu__subnav">
+                <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
+                    <a href="#" class="m-menu__link ">
+												<span class="m-menu__link-text">
+													Validation du dossier
+												</span>
+                    </a>
+                </li>
+                <li class="m-menu__item " aria-haspopup="true">
+                    <a th:href="@{/commission/applicant-list}" class="m-menu__link ">
+                        <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                            <span></span>
+                        </i>
+                        <span class="m-menu__link-text">
+													Dossiers des candidats
+												</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <li sec:authorize="hasAuthority('COMMISSION') || hasAuthority('ADMIN')"
+            class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"
+        data-menu-submenu-toggle="hover">
+        <a href="#" class="m-menu__link m-menu__toggle">
+            <i class="m-menu__link-icon flaticon-edit-1"></i>
+            <span class="m-menu__link-text">
+										Evaluation des candidats
+									</span>
+            <i class="m-menu__ver-arrow la la-angle-right"></i>
+        </a>
+        <div class="m-menu__submenu">
+            <span class="m-menu__arrow"></span>
+            <ul class="m-menu__subnav">
+                <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true">
+                    <a href="#" class="m-menu__link ">
+												<span class="m-menu__link-text">
+													Evaluation des candidats
+												</span>
+                    </a>
+                </li>
+                <li class="m-menu__item " aria-haspopup="true">
+                    <a th:href="@{/commission/accepted-applicant-list}" class="m-menu__link ">
+                        <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                            <span></span>
+                        </i>
+                        <span class="m-menu__link-text">
+													Liste des candidats
+												</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </li>
+</ul>

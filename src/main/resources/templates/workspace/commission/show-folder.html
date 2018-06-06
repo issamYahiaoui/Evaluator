@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/master}">
+<head>
+
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="m-portlet m-portlet--brand m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
+         data-portlet="true" id="m_portlet_tools_1" style="">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon">
+													<i class="flaticon-users"></i>
+												</span>
+                    <h3 class="m-portlet__head-text">
+                        Information Personnelle
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="" data-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Collapse">
+                            <i class="la la-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-portlet-tool="fullscreen" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Fullscreen">
+                            <i class="la la-expand"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="display: none;">
+            <div class="m-scrollable mCustomScrollbar _mCS_10 mCS-autoHide mCS_no_scrollbar" data-scrollbar-shown="true"
+                 data-scrollable="true" style="overflow: visible; height: 100%; max-height: 100%; position: relative;">
+                <div id="mCSB_10" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"
+                     style="max-height: 100%;">
+                    <div>
+
+                        <form class="m-form m-form--fit m-form--label-align-right">
+                            <div class="row form-group m-form__group">
+                                <div class="col-lg-6">
+                                    <label>
+                                        Nom :
+                                    </label>
+                                    <input type="text" class="form-control m-input" value="YAHIAOUI">
+                                </div>
+                                <div class="col-lg-6">
+                                    <label>
+                                        Prenom (S):
+                                    </label>
+                                    <input type="text" class="form-control m-input" value="Issam">
+                                </div>
+                            </div>
+                            <div class="row form-group m-form__group">
+                                <div class="col-lg-12">
+                                    <label>
+                                        Etablissement :
+                                    </label>
+                                    <input type="text" class="form-control m-input" value="ECOLE NATIONALE SUPERIEURE D'INFORMATIQUE">
+                                </div>
+                            </div>
+                            <div class="row form-group m-form__group">
+                                <div class="col-lg-3">
+                                    <label>
+                                        Diplome ou titre :
+                                    </label>
+                                    <input type="text" class="form-control m-input" value="Ingenieur SI">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label>
+                                        Date d'obtention :
+                                    </label>
+                                    <input type="text" class="form-control m-input" value="19/09/2016">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label>
+                                        Specialité :
+                                    </label>
+                                    <input type="text" class="form-control m-input" value="SI">
+                                </div>
+                            </div>
+                            <div class="row form-group m-form__group">
+                                <div class="col-lg-12">
+                                    <label>
+                                        Date d'acces au grade de maitre de conference grade A :
+                                    </label>
+                                    <input type="text" class="form-control m-input" value="">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div id="mCSB_10_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_10_scrollbar mCS-minimal-info mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_10_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 30px; top: 0px; display: block; height: 0px; max-height: 40.875px;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="m-portlet m-portlet--info m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
+         data-portlet="true" id="m_portlet_tools_1" style="">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon">
+													<i class="flaticon-interface-7"></i>
+												</span>
+                    <h3 class="m-portlet__head-text">
+                        Dossier Administrative
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="" data-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Collapse">
+                            <i class="la la-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-portlet-tool="fullscreen" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Fullscreen">
+                            <i class="la la-expand"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="display: none;">
+            <div class="m-scrollable mCustomScrollbar _mCS_10 mCS-autoHide mCS_no_scrollbar" data-scrollbar-shown="true"
+                 data-scrollable="true" style="overflow: visible; height: 100%; max-height: 100%; position: relative;">
+                <div id="mCSB_10" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"
+                     style="max-height: 100%;">
+                    <div>
+                        Files
+                        <div class="col-lg-12">
+                            <table class="table table-striped table-bordered" id="editable-datatable">
+                                <thead>
+                                <tr>
+                                    <th>Critère demandé</th>
+                                    <th>Pièces jointes</th>
+                                    <th>Valide</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr id="1" class="gradeX">
+                                    <td>Demande manuscrite</td>
+                                    <td>
+                                        <a href="" class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+                                        <a href="" class="btn btn-outline-success 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 2
+																</span>
+															</span>
+                                        </a>
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Attestation du travail</td>
+                                    <td>
+
+                                        <a href="" class="btn btn-outline-success 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 2
+																</span>
+															</span>
+                                        </a>
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Copie du diplôme de doctorat d’Etat :</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+                                <tr id="1" class="gradeX">
+                                    <td>Copie de l’attestation d’équivalence (dans le cas d’un diplôme étranger) : :</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+                                <tr id="1" class="gradeX">
+                                    <td>Copie de l’arrêté de maître de conférences classe A :</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>CURRICULUM VITAE DÉTAILLÉ :</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+                                <tr id="1" class="gradeX">
+                                    <td>Copies des décrets et/ou des arrêtés de nomination à des fonctions ou postes supérieurs : :</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+                                <tr id="1" class="gradeX">
+                                    <td>Copie de la thèse de Doctoratt :</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="mCSB_10_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_10_scrollbar mCS-minimal-info mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_10_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 30px; top: 0px; display: block; height: 0px; max-height: 40.875px;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="m-portlet m-portlet--success m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
+         data-portlet="true" id="m_portlet_tools_1" style="">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon">
+													<i class="flaticon-folder"></i>
+												</span>
+                    <h3 class="m-portlet__head-text">
+                        Dossier Scientifique et pédagogique
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="" data-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Collapse">
+                            <i class="la la-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-portlet-tool="fullscreen" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Fullscreen">
+                            <i class="la la-expand"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="display: none;">
+            <div class="m-scrollable mCustomScrollbar _mCS_10 mCS-autoHide mCS_no_scrollbar" data-scrollbar-shown="true"
+                 data-scrollable="true" style="overflow: visible; height: 100%; max-height: 100%; position: relative;">
+                <div id="mCSB_10" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"
+                     style="max-height: 100%;">
+                    <div>
+                        Files
+                        <div class="col-lg-12">
+                            <table class="table table-striped table-bordered" id="editable-datatable">
+                                <thead>
+                                <tr>
+                                    <th>Critère demandé</th>
+                                    <th>Pièces jointes</th>
+                                    <th>Valide</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr id="1" class="gradeX">
+                                    <td>Compte rendu des activités pédagogiques et scientifiques</td>
+                                    <td>
+                                        <a href="" class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+                                        <a href="" class="btn btn-outline-success 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 2
+																</span>
+															</span>
+                                        </a>
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>copies des autorisations de soutenance</td>
+                                    <td>
+
+                                        <a href="" class="btn btn-outline-success 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 2
+																</span>
+															</span>
+                                        </a>
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>copies des procès-verbaux de soutenance</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Exemplaires des ouvrages pédagogiques édités </td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Exemplaires des manuels pédagogiques édités</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Copies des pages de garde des mémoires de fin d’études de masters encadrés et soutenus</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Exemplaires des polycopiés édités</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Copies des pages de garde des mémoires de magister et/ou thèses de doctorats ou doctorats d’Etat dirigés et soutenus:</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="mCSB_10_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_10_scrollbar mCS-minimal-info mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_10_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 30px; top: 0px; display: block; height: 0px; max-height: 40.875px;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="m-portlet m-portlet--warning m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
+         data-portlet="true" id="m_portlet_tools_1" style="">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon">
+													<i class="flaticon-folder-4"></i>
+												</span>
+                    <h3 class="m-portlet__head-text">
+                        Autres                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="" data-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Collapse">
+                            <i class="la la-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-portlet-tool="fullscreen" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Fullscreen">
+                            <i class="la la-expand"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="display: none;">
+            <div class="m-scrollable mCustomScrollbar _mCS_10 mCS-autoHide mCS_no_scrollbar" data-scrollbar-shown="true"
+                 data-scrollable="true" style="overflow: visible; height: 100%; max-height: 100%; position: relative;">
+                <div id="mCSB_10" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"
+                     style="max-height: 100%;">
+                    <div>
+                        Files
+                        <div class="col-lg-12">
+                            <table class="table table-striped table-bordered" id="editable-datatable">
+                                <thead>
+                                <tr>
+                                    <th>Critère demandé</th>
+                                    <th>Pièces jointes</th>
+                                    <th>Valide</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr id="1" class="gradeX">
+                                    <td>Brevet d’invention éventuellement</td>
+                                    <td>
+                                        <a href="" class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+                                        <a href="" class="btn btn-outline-success 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 2
+																</span>
+															</span>
+                                        </a>
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Communications internationales, exemplaires originaux –tiré à part-</td>
+                                    <td>
+
+                                        <a href="" class="btn btn-outline-success 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 2
+																</span>
+															</span>
+                                        </a>
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Communications nationales, exemplaires originaux –tiré à part-</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Brevet d’invention éventuellement</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Publications nationales (revues, périodiques, ouvrages, actes et proceedings édités), exemplaires originaux –tiré à part-</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+                                <tr id="1" class="gradeX">
+                                    <td>Activités d’animation scientifique (organisation de colloques, expertise, membre de comité de lecture, chef ou membre d’un projet de recherche)</td>
+                                    <td>
+                                        <a href=""   class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+															<span>
+																<i class="fa fa-cloud-download"></i>
+																<span>
+																	File 1
+																</span>
+															</span>
+                                        </a>
+
+
+                                    </td>
+                                    <td class="center">
+                                        <label class="m-checkbox m-checkbox--state-success">
+                                            <input type="checkbox">
+
+                                            <span></span>
+                                        </label>
+                                    </td>
+
+                                </tr>
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="mCSB_10_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_10_scrollbar mCS-minimal-info mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_10_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 30px; top: 0px; display: block; height: 0px; max-height: 40.875px;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--
+    <div class="m-portlet m-portlet--success m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
+         data-portlet="true" id="m_portlet_tools_2" style="">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon">
+													<i class="flaticon-folder"></i>
+												</span>
+                    <h3 class="m-portlet__head-text">
+                        Dossier Scientifique et pédagogique
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="" data-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Collapse">
+                            <i class="la la-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-portlet-tool="fullscreen" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Fullscreen">
+                            <i class="la la-expand"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="display: none;">
+            <div class="m-scrollable mCustomScrollbar _mCS_10 mCS-autoHide mCS_no_scrollbar" data-scrollbar-shown="true"
+                 data-scrollable="true" style="overflow: visible; height: 100%; max-height: 100%; position: relative;">
+                <div id="mCSB_10" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"
+                     style="max-height: 100ù;">
+                    <div>
+                        Files
+                    </div>
+
+                    <div id="mCSB_10_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_10_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_10_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 50px; top: 0px; display: block; height: 0px; max-height: 40.875px;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="m-portlet m-portlet--warning m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
+         data-portlet="true" id="m_portlet_tools_3" style="">
+        <div class="m-portlet__head">
+            <div class="m-portlet__head-caption">
+                <div class="m-portlet__head-title">
+												<span class="m-portlet__head-icon">
+													<i class="flaticon-folder-4"></i>
+												</span>
+                    <h3 class="m-portlet__head-text">
+                        Autres
+                    </h3>
+                </div>
+            </div>
+            <div class="m-portlet__head-tools">
+                <ul class="m-portlet__nav">
+                    <li class="m-portlet__nav-item">
+                        <a href="" data-portlet-tool="toggle" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Collapse">
+                            <i class="la la-angle-down"></i>
+                        </a>
+                    </li>
+
+                    <li class="m-portlet__nav-item">
+                        <a href="#" data-portlet-tool="fullscreen" class="m-portlet__nav-link m-portlet__nav-link--icon"
+                           title="" data-original-title="Fullscreen">
+                            <i class="la la-expand"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="m-portlet__body" style="display: none;">
+            <div class="m-scrollable mCustomScrollbar _mCS_10 mCS-autoHide mCS_no_scrollbar" data-scrollbar-shown="true"
+                 data-scrollable="true" style="overflow: visible; height: 100%; max-height: 100%; position: relative;">
+                <div id="mCSB_10" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0"
+                     style="max-height: 100%;">
+                    <div >
+                        Files
+                    </div>
+                    <div id="mCSB_10_scrollbar_vertical"
+                         class="mCSB_scrollTools mCSB_10_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"
+                         style="display: none;">
+                        <div class="mCSB_draggerContainer">
+                            <div id="mCSB_10_dragger_vertical" class="mCSB_dragger"
+                                 style="position: absolute; min-height: 50px; top: 0px; display: block; height: 0px; max-height: 40.875px;">
+                                <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                            </div>
+                            <div class="mCSB_draggerRail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    -->
+
+</div>
