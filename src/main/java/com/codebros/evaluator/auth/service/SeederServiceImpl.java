@@ -53,16 +53,7 @@ public class SeederServiceImpl implements SeederService{
 
     public void seed(){
 
-        //roles
-        this.saveRoleSeed(1,"ADMIN");
-        this.saveRoleSeed(2,"APPLICANT");
-        this.saveRoleSeed(3,"COMMISSION");
 
-
-        //users
-        this.saveUserSeed("admin@gmail.com","admin","123456","ADMIN");
-        this.saveUserSeed("applicant@gmail.com","applicant","123456","APPLICANT");
-        this.saveUserSeed("commission@gmail.com","commission","123456","COMMISSION");
 
 
 
@@ -73,10 +64,10 @@ public class SeederServiceImpl implements SeederService{
         this.saveRequirementSeed( "ADMINISTRATIF", "Demande manuscrite");
         this.saveRequirementSeed( "ADMINISTRATIF", "Attestation du travail");
         this.saveRequirementSeed( "ADMINISTRATIF", "Copie du diplôme de doctorat d’Etat");
-        this.saveRequirementSeed( "ADMINISTRATIF", "Copie de l’attestation d’équivalence (dans le cas d’un diplôme étranger) ");
+        this.saveRequirementSeed( "ADMINISTRATIF", "Copie de l’attestation d’équivalence _  dans le cas d’un diplôme étranger ");
         this.saveRequirementSeed( "ADMINISTRATIF", "Copie de l’arrêté de maître de conférences classe A");
         this.saveRequirementSeed( "ADMINISTRATIF", "CURRICULUM VITAE DÉTAILLÉ");
-        this.saveRequirementSeed( "ADMINISTRATIF", "Copies des décrets et/ou des arrêtés de nomination à des fonctions ou postes supérieurs");
+        this.saveRequirementSeed( "ADMINISTRATIF", "Copies des décrets et ou des arrêtés de nomination à des fonctions ou postes supérieurs");
         this.saveRequirementSeed( "ADMINISTRATIF", "Copie de la thèse de Doctorat");
 
 
@@ -87,15 +78,15 @@ public class SeederServiceImpl implements SeederService{
         this.saveRequirementSeed( "SCIENTIFIC", "Exemplaires des manuels pédagogiques édités");
         this.saveRequirementSeed( "SCIENTIFIC", "Copies des pages de garde des mémoires de fin d’études de masters encadrés et soutenus");
         this.saveRequirementSeed( "SCIENTIFIC", "Exemplaires des polycopiés édités");
-        this.saveRequirementSeed( "SCIENTIFIC", "Copies des pages de garde des mémoires de magister et/ou thèses de doctorats ou doctorats d’Etat dirigés et soutenus");
+        this.saveRequirementSeed( "SCIENTIFIC", "Copies des pages de garde des mémoires de magister et ou thèses de doctorats ou doctorats d’Etat dirigés et soutenus");
 
 
         this.saveRequirementSeed( "AUTRE", "Brevet d’invention éventuellement");
         this.saveRequirementSeed( "AUTRE", "Communications internationales, exemplaires originaux –tiré à part-");
         this.saveRequirementSeed( "AUTRE", "Communications nationales, exemplaires originaux –tiré à part-");
         this.saveRequirementSeed( "AUTRE", "Brevet d’invention éventuellement");
-        this.saveRequirementSeed( "AUTRE", "Publications nationales (revues, périodiques, ouvrages, actes et proceedings édités), exemplaires originaux –tiré à part-");
-        this.saveRequirementSeed( "AUTRE", "Activités d’animation scientifique (organisation de colloques, expertise, membre de comité de lecture, chef ou membre d’un projet de recherche)");
+        this.saveRequirementSeed( "AUTRE", "Publications nationales _ revues, périodiques, ouvrages, actes et proceedings édités , exemplaires originaux –tiré à part-");
+        this.saveRequirementSeed( "AUTRE", "Activités d’animation scientifique  : organisation de colloques, expertise, membre de comité de lecture, chef ou membre d’un projet de recherche ");
 
 
 
@@ -115,6 +106,21 @@ public class SeederServiceImpl implements SeederService{
         this.saveSpecialitySeeder(3,"TELECOMMUNICATION");
         this.saveSpecialitySeeder(4,"PHYSIQUE");
         this.saveSpecialitySeeder(5,"MATHEMATIQUE");
+
+
+
+
+
+        //roles
+        this.saveRoleSeed(1,"ADMIN");
+        this.saveRoleSeed(2,"APPLICANT");
+        this.saveRoleSeed(3,"COMMISSION");
+
+
+        //users
+        this.saveUserSeed("admin@gmail.com","admin","123456","ADMIN");
+        this.saveUserSeed("applicant@gmail.com","applicant","123456","APPLICANT");
+        this.saveUserSeed("commission@gmail.com","commission","123456","COMMISSION");
 
 
 
@@ -151,8 +157,11 @@ public class SeederServiceImpl implements SeederService{
                 Applicant applicant = new Applicant();
                 Folder folder = new Folder();
                 applicant.setUser(user);
+                folder = folderService.init(folder) ;
+                folderService.save(folder) ;
+                System.out.println(requirementRepository.findAll());
                 applicant.setFolder(folderService.init(folder)) ;
-                folderRepository.save(folderService.init(folder));
+
                 applicantRepository.save(applicant);
                 return ;
             case "COMMISSION":

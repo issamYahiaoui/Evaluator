@@ -1,58 +1,24 @@
-<div class="m-portlet__body">
+<div class="m-portlet__body" xmlns:th="http://www.w3.org/1999/xhtml">
     <div class="form-group m-form__group row">
-        <div class="col-lg-6">
-            <label class="col-form-label col-sm-12">
-                Brevet d’invention  éventuellement             </label>
-            <div class="m-dropzone dropzone m-dropzone--primary dz-clickable" action="/uploadForm/3">
+        <th:block th:each="req : ${other_requirements}">
 
+            <div  style="margin: 10px" class="col-lg-5 m-dropzone  m-dropzone--primary ">
+            <span  class="col-form-label col-sm-12">
+                <a href="#" th:attr="name=${req.name}" class="btn m-animate-shake bounceIn btn-outline-info m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--outline-2x m-btn--pill m-btn--air">
+                    <i class="fa flaticon-download"></i>
+                </a>
+                <span style="margin: 10px" th:text="${req.name}"></span>
+            </span>
+                <input type="file" class="form-control m-input" placeholder=""
+                       name="files" rows="1" th:attr="id=${req.name}" multiple="true" hidden >
+                <div hidden class="m-dropzone  m-dropzone--primary " action="/uploadForm/1" >
+                </div>
             </div>
-        </div>
-        <div class="col-lg-6">
-            <label class="col-form-label col-sm-12">
-                Communications internationales, exemplaires originaux   –tiré à part-
-            </label>
-            <div class="m-dropzone dropzone m-dropzone--primary dz-clickable" action="/uploadForm/3" >
+        </th:block>
 
-            </div>
-        </div>
+
     </div>
-    <div class="form-group m-form__group row">
-        <div class="col-lg-6">
 
-            <label class="col-form-label col-sm-12">
-                Communications nationales, exemplaires originaux  –tiré à part-
-            </label>
-            <div class="m-dropzone dropzone  m-dropzone--success dz-clickable" action="/uploadForm/3" >
-
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <label class="col-form-label col-sm-12">
-                Brevet d’invention  éventuellement
-            </label>
-            <div class="m-dropzone dropzone m-dropzone--success dz-clickable" action="/uploadForm/3" >
-
-            </div>
-        </div>
-    </div>
-    <div class="form-group m-form__group row">
-        <div class="col-lg-6">
-
-            <label class="col-form-label col-sm-12">
-                Publications nationales (revues, périodiques, ouvrages, actes et proceedings édités), exemplaires originaux –tiré à part-            </label>
-            <div class="m-dropzone dropzone  m-dropzone--warning dz-clickable" action="/uploadForm/3" >
-
-            </div>
-        </div>
-        <div class="col-lg-6">
-
-            <label class="col-form-label col-sm-12">
-                Activités d’animation scientifique (organisation de colloques, expertise, membre de comité de lecture, chef ou membre d’un projet de recherche) </label>
-            <div class="m-dropzone dropzone m-dropzone--warning  dz-clickable" action="/uploadForm/3" >
-
-            </div>
-        </div>
-    </div>
     <div class="m-portlet__foot m-portlet__foot--fit">
         <div class="m-form__actions m-form__actions--right">
             <button type="reset" class="btn btn-success ">

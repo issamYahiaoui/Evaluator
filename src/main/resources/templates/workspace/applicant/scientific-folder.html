@@ -1,80 +1,24 @@
-<div class="m-portlet__body">
+<div class="m-portlet__body" xmlns:th="http://www.w3.org/1999/xhtml">
     <div class="form-group m-form__group row">
-        <div class="col-lg-6">
-            <label class="col-form-label col-sm-12">
-                Compte rendu des activités pédagogiques et scientifiques :
-            </label>
-            <div class="m-dropzone dropzone m-dropzone--primary dz-clickable" action="/uploadForm/2" >
+        <th:block th:each="req : ${scientific_requirements}">
 
+            <div  style="margin: 10px" class="col-lg-5 m-dropzone  m-dropzone--primary ">
+            <span  class="col-form-label col-sm-12">
+                <a href="#" th:attr="name=${req.name}" class="btn m-animate-shake bounceIn btn-outline-info m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--outline-2x m-btn--pill m-btn--air">
+                    <i class="fa flaticon-download"></i>
+                </a>
+                <span style="margin: 10px" th:text="${req.name}"></span>
+            </span>
+                <input type="file" class="form-control m-input" placeholder=""
+                       name="files" rows="1" th:attr="id=${req.name}" multiple="true" hidden >
+                <div hidden class="m-dropzone  m-dropzone--primary " action="/uploadForm/1" >
+                </div>
             </div>
-        </div>
-        <div class="col-lg-6">
-            <label class="col-form-label col-sm-12">
-                copies des autorisations de soutenance :
-            </label>
-            <div class="m-dropzone dropzone m-dropzone--primary dz-clickable" action="/uploadForm/2" >
+        </th:block>
 
-            </div>
-        </div>
+
     </div>
-    <div class="form-group m-form__group row">
-        <div class="col-lg-6">
 
-            <label class="col-form-label col-sm-12">
-                copies des procès-verbaux de soutenance :
-            </label>
-            <div class="m-dropzone dropzone  m-dropzone--success dz-clickable" action="/uploadForm/2" >
-
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <label class="col-form-label col-sm-12">
-                Exemplaires des ouvrages pédagogiques édités :
-            </label>
-            <div class="m-dropzone dropzone m-dropzone--success dz-clickable" action="/uploadForm/2" >
-
-            </div>
-        </div>
-    </div>
-    <div class="form-group m-form__group row">
-        <div class="col-lg-6">
-
-            <label class="col-form-label col-sm-12">
-                Exemplaires des manuels pédagogiques édités :
-            </label>
-            <div class="m-dropzone dropzone  m-dropzone--warning dz-clickable" action="/uploadForm/2" >
-
-            </div>
-        </div>
-        <div class="col-lg-6">
-
-            <label class="col-form-label col-sm-12">
-                Copies des pages de garde des mémoires de fin d’études de masters encadrés et soutenus :           </label>
-            <div class="m-dropzone dropzone m-dropzone--warning  dz-clickable" action="/uploadForm/2" >
-
-            </div>
-        </div>
-    </div>
-    <div class="form-group m-form__group row">
-        <div class="col-lg-6">
-
-            <label class="col-form-label col-sm-12">
-                Exemplaires des polycopiés édités :
-            </label>
-            <div class="m-dropzone dropzone  m-dropzone--info dz-clickable" action="/uploadForm/3" >
-
-            </div>
-        </div>
-        <div class="col-lg-6">
-
-            <label class="col-form-label col-sm-12">
-                Copies des pages de garde des mémoires de magister et/ou thèses de doctorats ou doctorats d’Etat dirigés et soutenus:
-            </label>
-            <div class="m-dropzone dropzone m-dropzone--info dz-clickable" action="/uploadForm/3" >
-
-            </div>
-        </div>
-    </div>
     <div class="m-portlet__foot m-portlet__foot--fit">
         <div class="m-form__actions m-form__actions--right">
             <button type="reset" class="btn btn-success ">
