@@ -60,4 +60,8 @@ public class Applicant {
     @JoinColumn(name = "application_id")
     private Application appliaction;
 
+
+
+
+
 }

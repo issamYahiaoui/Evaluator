@@ -44,6 +44,9 @@ public class SeederServiceImpl implements SeederService{
     @Autowired
     private ApplicantRepository applicantRepository ;
 
+    @Autowired
+    private ApplicationRepository applicationRepository;
+
 
 
 
@@ -117,11 +120,20 @@ public class SeederServiceImpl implements SeederService{
         this.saveRoleSeed(3,"COMMISSION");
 
 
-        //users
-        this.saveUserSeed("admin@gmail.com","admin","123456","ADMIN");
-        this.saveUserSeed("applicant@gmail.com","applicant","123456","APPLICANT");
-        this.saveUserSeed("commission@gmail.com","commission","123456","COMMISSION");
 
+
+
+
+
+       Application app1 =  this.saveApplication("Yahiaoui", "Issam", "Diplome" , etablissementRepository.findById(1),specialityRepository.findById(1),"066421310");
+        Application app2= this.saveApplication("Setrerrahmane", "Djalle", "Diplome" , etablissementRepository.findById(2),specialityRepository.findById(2),"066421310");
+        Application app3= this.saveApplication("Amara", "Ziyad", "Diplome" , etablissementRepository.findById(3),specialityRepository.findById(3),"066421310");
+
+        //users
+        this.saveUserSeed("admin@gmail.com","admin","123456","ADMIN", new Application());
+        this.saveUserSeed("applicant@gmail.com","applicant","123456","APPLICANT", app1);
+        this.saveUserSeed("applicant2@gmail.com","applicant 2","123456","APPLICANT", app2);
+        this.saveUserSeed("commission@gmail.com","commission","123456","COMMISSION", new Application());
 
 
     }
@@ -137,9 +149,20 @@ public class SeederServiceImpl implements SeederService{
 
 
 
+    private void  saveApplicant(User user, Application application){
+        Applicant applicant = new Applicant();
+        Folder folder = new Folder();
+        applicant.setUser(user);
+        folder = folderService.init(folder) ;
+        folderService.save(folder) ;
+        System.out.println(requirementRepository.findAll());
+        applicant.setFolder(folderService.init(folder)) ;
+        applicant.setAppliaction(application);
+        applicantRepository.save(applicant);
+    }
 
 
-    private void saveUserSeed(String email ,String name,  String password , String role ){
+    private void saveUserSeed(String email ,String name,  String password , String role, Application application ){
         User user = new User();
         user.setEmail(email);
         user.setName(name);
@@ -154,15 +177,7 @@ public class SeederServiceImpl implements SeederService{
 
                 return ;
             case "APPLICANT":
-                Applicant applicant = new Applicant();
-                Folder folder = new Folder();
-                applicant.setUser(user);
-                folder = folderService.init(folder) ;
-                folderService.save(folder) ;
-                System.out.println(requirementRepository.findAll());
-                applicant.setFolder(folderService.init(folder)) ;
-
-                applicantRepository.save(applicant);
+                this.saveApplicant(user,application);
                 return ;
             case "COMMISSION":
 
@@ -184,6 +199,7 @@ public class SeederServiceImpl implements SeederService{
         requirementRepository.save(req) ;
     }
 
+
     public  void saveEtablissementSeeder(Integer id, String name){
         Etablissement et =  new Etablissement() ;
         et.setId(id);
@@ -195,6 +211,18 @@ public class SeederServiceImpl implements SeederService{
         et.setId(id);
         et.setName(name);
         specialityRepository.save(et);
+    }
+
+    public  Application saveApplication(String name , String firstname ,  String diplome , Etablissement etablissement ,  Speciality speciality, String phone ){
+        Application application =  new Application() ;
+        application.setName(name);
+        application.setFirstName(firstname);
+        application.setEtablissement(etablissement);
+        application.setSpeciality(speciality);
+        application.setDoctorat_habilitation_universitaire(diplome);
+        application.setPhone(phone);
+        applicationRepository.save(application) ;
+        return application ;
     }
 
 }

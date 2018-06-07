@@ -50,9 +50,7 @@
                     <th title="Field #1">
                         ID
                     </th>
-                    <th title="Field #2">
-                        Email
-                    </th>
+
                     <th title="Field #3">
                         Nom
                     </th>
@@ -61,6 +59,9 @@
                     </th>
                     <th title="Field #5">
                         Etabliseement
+                    </th>
+                    <th title="Field #5">
+                        Specialite
                     </th>
                     <th title="Field #6">
                         Dossier
@@ -75,385 +76,53 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>
-                        16590-107
-                    </td>
-                    <td>
-                        Yahiaoui
-                    </td>
-                    <td>
-                        Issam
-                    </td>
-                    <td>
-                        ei_yahiaoui@esi.dz
-                    </td>
-                    <td>
-                        ESI-ALGER
-                    </td>
-                    <td>
-                        <a th:href="@{/commission/show-folder}" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
-                            <i class="fa flaticon-folder-1"></i>
-                        </a>
-                    </td>
+                <th:block th:each="applicant : ${applicants}">
+                    <tr>
+                        <td th:text="${applicant.id}">
 
-                    <td>
-                        <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
+                        </td>
+                        <td th:text="${applicant.getAppliaction().getName()}">
+
+                        </td>
+                        <td th:text="${applicant.getAppliaction().getFirstName()}">
+
+                        </td>
+
+                        <td th:text="${applicant.getAppliaction().getEtablissement().getName()}">
+
+                        </td>
+                        <td th:text="${applicant.getAppliaction().getSpeciality().getName()}">
+
+                         </td>
+
+                        <td>
+                            <a th:href="@{'/commission/show-folder/'+${applicant.getId()}}" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
+                                <i class="fa flaticon-folder-1"></i>
+                            </a>
+                        </td>
+
+                        <td>
+                            <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
 															<span>
 																<i class="fa flaticon-bell"></i>
 																<span>
 																	Accepter
 																</span>
 															</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
 															<span>
 																<i class="fa flaticon-danger"></i>
 																<span>
 																	Rejeter
 																</span>
 															</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        16590-107
-                    </td>
-                    <td>
-                        Yahiaoui
-                    </td>
-                    <td>
-                        Issam
-                    </td>
-                    <td>
-                        ei_yahiaoui@esi.dz
-                    </td>
-                    <td>
-                        ESI-ALGER
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
-                            <i class="fa flaticon-folder-1"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-bell"></i>
-																<span>
-																	Accepter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-danger"></i>
-																<span>
-																	Rejeter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        16590-107
-                    </td>
-                    <td>
-                        Yahiaoui
-                    </td>
-                    <td>
-                        Issam
-                    </td>
-                    <td>
-                        ei_yahiaoui@esi.dz
-                    </td>
-                    <td>
-                        ESI-ALGER
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
-                            <i class="fa flaticon-folder-1"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-bell"></i>
-																<span>
-																	Accepter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-danger"></i>
-																<span>
-																	Rejeter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        16590-107
-                    </td>
-                    <td>
-                        Yahiaoui
-                    </td>
-                    <td>
-                        Issam
-                    </td>
-                    <td>
-                        ei_yahiaoui@esi.dz
-                    </td>
-                    <td>
-                        ESI-ALGER
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
-                            <i class="fa flaticon-folder-1"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-bell"></i>
-																<span>
-																	Accepter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-danger"></i>
-																<span>
-																	Rejeter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        16590-107
-                    </td>
-                    <td>
-                        Yahiaoui
-                    </td>
-                    <td>
-                        Issam
-                    </td>
-                    <td>
-                        ei_yahiaoui@esi.dz
-                    </td>
-                    <td>
-                        ESI-ALGER
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
-                            <i class="fa flaticon-folder-1"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-bell"></i>
-																<span>
-																	Accepter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-danger"></i>
-																<span>
-																	Rejeter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        16590-107
-                    </td>
-                    <td>
-                        Yahiaoui
-                    </td>
-                    <td>
-                        Issam
-                    </td>
-                    <td>
-                        ei_yahiaoui@esi.dz
-                    </td>
-                    <td>
-                        ESI-ALGER
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
-                            <i class="fa flaticon-folder-1"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-bell"></i>
-																<span>
-																	Accepter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-danger"></i>
-																<span>
-																	Rejeter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        16590-107
-                    </td>
-                    <td>
-                        Yahiaoui
-                    </td>
-                    <td>
-                        Issam
-                    </td>
-                    <td>
-                        ei_yahiaoui@esi.dz
-                    </td>
-                    <td>
-                        ESI-ALGER
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
-                            <i class="fa flaticon-folder-1"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-bell"></i>
-																<span>
-																	Accepter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-danger"></i>
-																<span>
-																	Rejeter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        16590-107
-                    </td>
-                    <td>
-                        Yahiaoui
-                    </td>
-                    <td>
-                        Issam
-                    </td>
-                    <td>
-                        ei_yahiaoui@esi.dz
-                    </td>
-                    <td>
-                        ESI-ALGER
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
-                            <i class="fa flaticon-folder-1"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-bell"></i>
-																<span>
-																	Accepter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-danger"></i>
-																<span>
-																	Rejeter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        16590-107
-                    </td>
-                    <td>
-                        Yahiaoui
-                    </td>
-                    <td>
-                        Issam
-                    </td>
-                    <td>
-                        ei_yahiaoui@esi.dz
-                    </td>
-                    <td>
-                        ESI-ALGER
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-primary m-btn m-btn--icon m-btn--icon-only m-btn--custom  m-btn--outline-2x m-btn--pill m-btn--air">
-                            <i class="fa flaticon-folder-1"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-success m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-bell"></i>
-																<span>
-																	Accepter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-outline-danger m-btn m-btn--custom m-btn--icon m-btn--pill m-btn--air">
-															<span>
-																<i class="fa flaticon-danger"></i>
-																<span>
-																	Rejeter
-																</span>
-															</span>
-                        </a>
-                    </td>
-                </tr>
+                            </a>
+                        </td>
+                    </tr>
+                 </th:block>
 
                 </tbody>
             </table>

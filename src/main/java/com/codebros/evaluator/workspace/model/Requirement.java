@@ -23,6 +23,20 @@ public class Requirement {
     @Column(name = "type")
     private  String type  ;
 
+    public Boolean getValid() {
+        return valid;
+    }
+
+    public void setValid(Boolean valid) {
+        this.valid = valid;
+    }
+
+    @Column(name = "valid")
+    private  Boolean valid  ;
+
+    public void setAttachments(Set<Attachment> attachments) {
+        this.attachments = attachments;
+    }
 
     @OneToMany(fetch=FetchType.EAGER)
     @JoinColumn(name="requirement_id")

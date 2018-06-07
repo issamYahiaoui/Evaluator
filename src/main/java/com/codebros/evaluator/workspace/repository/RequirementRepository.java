@@ -11,5 +11,6 @@ import java.util.List;
 public interface RequirementRepository extends JpaRepository<Requirement,Long>{
 
     Requirement findByName(String name);
+    Requirement findById(Integer id);
     ArrayList<Requirement> findAllByType(String type);
 }

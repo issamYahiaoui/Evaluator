@@ -23,16 +23,16 @@ import org.springframework.web.multipart.MultipartFile;
 @Service
 public class StorageServiceImpl implements StorageService {
 
-    public final Path rootLocation = Paths.get("folders");
-    public final Path administratif =  Paths.get("folders/administratif") ;
-    public final Path scientific =  Paths.get("folders/scientific") ;
-    public final Path other =  Paths.get("folders/other") ;
+    public final Path rootLocation = Paths.get("src/main/resources/static/assets/files");
+
 
 
 
     @Override
-    public void store(MultipartFile file , int type) {
-        String filename = StringUtils.cleanPath(file.getOriginalFilename());
+    public void store(MultipartFile file , int id) {
+        System.out.println("inside store");
+        System.out.println(file.getSize());
+        String filename = StringUtils.cleanPath(id+"_"+file.getOriginalFilename());
         try {
             if (file.isEmpty()) {
                 throw new StorageException("Failed to store empty file " + filename);
@@ -44,20 +44,9 @@ public class StorageServiceImpl implements StorageService {
                                 + filename);
             }
             try (InputStream inputStream = file.getInputStream()) {
-                switch(type) {
-                    case 1 :
-                        Files.copy(inputStream, this.administratif.resolve(filename),
-                                StandardCopyOption.REPLACE_EXISTING);
-                        break ;
-                    case 2 :
-                        Files.copy(inputStream, this.scientific.resolve(filename),
-                                StandardCopyOption.REPLACE_EXISTING);
-                        break ;
-                    case 3 :
-                        Files.copy(inputStream, this.other.resolve(filename),
-                                StandardCopyOption.REPLACE_EXISTING);
-                        break ;
-                }
+                Files.copy(inputStream, this.rootLocation.resolve(filename),
+                        StandardCopyOption.REPLACE_EXISTING);
+
 
             }
         }
@@ -106,18 +95,14 @@ public class StorageServiceImpl implements StorageService {
     @Override
     public void deleteAll() {
         FileSystemUtils.deleteRecursively(rootLocation.toFile());
-        FileSystemUtils.deleteRecursively(administratif.toFile());
-        FileSystemUtils.deleteRecursively(scientific.toFile());
-        FileSystemUtils.deleteRecursively(other.toFile());
+
     }
 
     @Override
     public void init() {
         try {
             Files.createDirectories(rootLocation);
-            Files.createDirectories(administratif);
-            Files.createDirectories(scientific);
-            Files.createDirectories(other);
+
         }
         catch (IOException e) {
             throw new StorageException("Could not initialize storage", e);

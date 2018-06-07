@@ -7,7 +7,7 @@
 </head>
 <body>
 <div layout:fragment="content">
-    <form action="" id="folder_form">
+    <form action="/uploadForm"  method="POST" id="folder_form" enctype="multipart/form-data">
         <div class="m-portlet m-portlet--info m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
              data-portlet="true" id="m_portlet_tools_1" style="">
             <div class="m-portlet__head">
@@ -176,20 +176,9 @@
     <div class="modal fade" id="preview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                        Title
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">
-							&times;
-						</span>
-                    </button>
-                </div>
-                <div class="modal-body">
+            <div id="pdfContent" >
 
-                </div>
+
 
             </div>
         </div>

@@ -3,8 +3,7 @@ package com.codebros.evaluator.auth.controller;
 
 import com.codebros.evaluator.auth.model.User;
 import com.codebros.evaluator.auth.service.UserService;
-import com.codebros.evaluator.workspace.model.Applicant;
-import com.codebros.evaluator.workspace.model.Folder;
+import com.codebros.evaluator.workspace.model.*;
 import com.codebros.evaluator.workspace.repository.ApplicantRepository;
 import com.codebros.evaluator.workspace.service.FolderService;
 import org.apache.catalina.Session;
@@ -68,6 +67,10 @@ public class UserController {
             folderService.init(folder);
             folderService.save(folder) ;
             applicant.setFolder(folder);
+            Application application = new Application() ;
+            application.setEtablissement(new Etablissement());
+            application.setSpeciality(new Speciality());
+            applicant.setAppliaction(application);
             userService.saveUser(user);
             applicantService.save(applicant) ;
             modelAndView.addObject("successMessage", "User has been registered successfully");

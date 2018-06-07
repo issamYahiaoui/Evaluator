@@ -57,7 +57,9 @@ public class ApplicantController {
         User user = userService.findUserByEmail(auth.getName());
         Applicant applicant = applicantRepository.findByUser(user) ;
         Folder folder =  applicant.getFolder();
+        String url = "/uploadForm" ;
         modelAndView.addObject("folder",folder);
+        modelAndView.addObject("url",url);
         modelAndView.addObject("administratif_requirements",folder.getRequirements("ADMINISTRATIF"));
         modelAndView.addObject("scientific_requirements",folder.getRequirements("SCIENTIFIC"));
         modelAndView.addObject("other_requirements",folder.getRequirements("AUTRE"));
@@ -71,10 +73,16 @@ public class ApplicantController {
     /*** applicant form  ****/
 
     @GetMapping("/applicant-form")
-    public ModelAndView applicantForm (){
+    public ModelAndView applicantForm (
+
+    ){
         ModelAndView modelAndView = new ModelAndView();
-        Application application =  new Application() ;
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        User user = userService.findUserByEmail(auth.getName());
+        Applicant applicant = applicantRepository.findByUser(user) ;
+        Application application = applicant.getAppliaction() ;
         modelAndView.addObject("application", application);
+        modelAndView.addObject("applicant", applicant);
         modelAndView.addObject("etablissement", etablissementRepository.findAll());
         modelAndView.addObject("speciality", specialityRepository.findAll());
         modelAndView.setViewName("workspace/applicant/applicant-form");
@@ -83,9 +91,27 @@ public class ApplicantController {
     }
 
     @PostMapping("/applicant-form")
-    public ModelAndView applicationFormPost (@Valid Application application) {
+    public ModelAndView applicationFormPost (@Valid Application application ,
+                                             @RequestParam("etablissement_id") Integer etablissement_id ,
+                                             @RequestParam("speciality_id") Integer specility_id
+                                             ) {
         ModelAndView modelAndView = new ModelAndView();
-        applicationRepository.save(application);
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        User user = userService.findUserByEmail(auth.getName());
+        Applicant applicant = applicantRepository.findByUser(user) ;
+        Etablissement etablissement = etablissementRepository.findById(etablissement_id) ;
+        Speciality speciality = specialityRepository.findById(specility_id);
+        Application new_application = applicant.getAppliaction();
+        new_application.setSpeciality(speciality);
+        new_application.setEtablissement(etablissement);
+        new_application.setAttestation_equivalence(application.getAttestation_equivalence());
+        new_application.setDate_displome_mca(application.getDate_displome_mca());
+        new_application.setDate_doctorat_etat(application.getDate_doctorat_etat());
+        new_application.setDoctorat_habilitation_universitaire(application.getDoctorat_habilitation_universitaire());
+        new_application.setFirstName(application.getFirstName());
+        new_application.setName(application.getName());
+        new_application.setPhone(application.getPhone());
+        applicationRepository.save(new_application);
         modelAndView.addObject("application", application);
         modelAndView.addObject("successMessage", "Opération terminée avec succes");
         modelAndView.setViewName("workspace/applicant/applicant-form");

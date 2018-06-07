@@ -8,4 +8,5 @@ public interface ApplicantRepository extends JpaRepository<Applicant,Long> {
 
 
    public Applicant findByUser(User user);
+   public Applicant findById(Integer id);
 }

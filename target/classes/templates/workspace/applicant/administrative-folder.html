@@ -2,17 +2,28 @@
     <div class="form-group m-form__group row">
         <th:block th:each="req : ${administratif_requirements}">
 
-            <div  style="margin: 10px" class="col-lg-5 m-dropzone  m-dropzone--primary ">
+                <div  style="margin: 10px" class="col-lg-5 m-dropzone  m-dropzone--primary ">
+                    <form th:action="'/uploadForm/'+ ${req.id}" method="post" enctype="multipart/form-data">
             <span  class="col-form-label col-sm-12">
                 <a href="#" th:attr="name=${req.id}" class="btn m-animate-shake bounceIn btn-outline-info m-btn m-btn--icon m-btn--icon-only m-btn--custom m-btn--outline-2x m-btn--pill m-btn--air">
                     <i class="fa flaticon-download"></i>
                 </a>
                 <span style="margin: 10px" th:text="${req.name}"></span>
             </span>
-                <input type="file" class="form-control m-input" placeholder=""
-                       name="files" rows="1" th:attr="id=${req.id}" multiple="true" hidden >
-                <div   th:attr="name=${req.id}" ></div>
-            </div>
+                    <input type="file" class="form-control m-input" placeholder="" onchange="handleFileSelect(event)"
+                           hidden  rows="1" th:attr="id=${req.id}" name="file" multiple>
+                    <div   th:attr="name=${req.id}" ></div>
+                        <div class="m-portlet__foot m-portlet__foot--fit">
+                            <div class="m-form__actions m-form__actions--right">
+                                <button type="submit" class="btn btn-success ">
+                                    Envoyer
+                                </button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
 
         </th:block>
 
@@ -23,7 +34,7 @@
 
     <div class="m-portlet__foot m-portlet__foot--fit">
         <div class="m-form__actions m-form__actions--right">
-            <button type="reset" class="btn btn-success ">
+            <button type="submit" class="btn btn-success ">
                 CONFIRMER
             </button>
             <button type="reset" class="btn btn-secondary">
