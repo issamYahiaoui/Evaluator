@@ -64,9 +64,15 @@ function showPdf(filename){
                 //object += "If you are unable to view file, you can download from <a href = \"/{fileName}\">here</a>";
                 //object += " or download <a target = \"_blank\" href = \"http://get.adobe.com/reader/\">Adobe PDF Reader</a> to view the file.";
                 object += "</object>";
-                object = object.replace(/{fileName}/g, "/assets/app/media/img/users/"+filename);
+                object = object.replace(/{fileName}/g, "/assets/app/media/img/users/test.pdf");
      $("#pdfContent").html(object);
 
+}
+
+function triggerPdf(){
+    var name = $(this).attr('name')
+    console.log('pdf triggered ...', name)
+    showPdf(name)
 }
 $(function(){
     $("#folder_form a").on('click',function () {

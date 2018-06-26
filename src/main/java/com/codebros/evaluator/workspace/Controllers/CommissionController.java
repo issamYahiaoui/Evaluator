@@ -5,17 +5,18 @@ import com.codebros.evaluator.auth.model.User;
 import com.codebros.evaluator.workspace.model.Applicant;
 import com.codebros.evaluator.workspace.model.Folder;
 import com.codebros.evaluator.workspace.model.Requirement;
+import com.codebros.evaluator.workspace.model.Validation;
 import com.codebros.evaluator.workspace.repository.ApplicantRepository;
 import com.codebros.evaluator.workspace.repository.FolderRepository;
+import com.codebros.evaluator.workspace.repository.RequirementRepository;
+import com.codebros.evaluator.workspace.repository.ValidationRepository;
 import com.codebros.evaluator.workspace.service.FolderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Set;
@@ -29,6 +30,12 @@ public class CommissionController {
 
     @Autowired
     private FolderRepository folderRepository;
+
+    @Autowired
+    private RequirementRepository requirementRepository;
+
+    @Autowired
+    private ValidationRepository validationRepository;
 
     @GetMapping("/applicant-list")
     public ModelAndView applicantList (){
@@ -59,7 +66,7 @@ public class CommissionController {
         modelAndView.addObject("scientific",scientific);
         modelAndView.addObject("autre",autre);
         modelAndView.addObject("applicant",applicant);
-
+        modelAndView.addObject("successMessage", "Opération terminée avec succes");
         modelAndView.setViewName("workspace/commission/show-folder");
         return modelAndView;
 
@@ -69,6 +76,28 @@ public class CommissionController {
     public String acceptedApplicantList(){return "workspace/commission/accepted-applicant-list";}
     @GetMapping("/evaluate-applicant")
     public String evaluateApplicant(){return "workspace/commission/evaluate-applicant";}
+
+
+    @PostMapping("/validateRequirement/{id}/{folder_id}")
+    public String  validateRequirement(
+            @PathVariable("id") Integer id ,
+            @PathVariable("folder_id") Integer folder_id ,
+            @RequestParam("applicant_id") Integer applicant_id
+    ){
+
+        ModelAndView modelAndView = new ModelAndView();
+        Requirement requirement = requirementRepository.findById(id) ;
+        Validation validation = new Validation() ;
+        validation.setFolder_id(folder_id);
+        validation.setRequirement_id(requirement.getId());
+        validation.setValid(true);
+        validationRepository.save(validation) ;
+        requirement.setValid(true);
+        requirementRepository.save(requirement) ;
+
+        return "redirect:/commission/applicant-list";
+
+    }
 
 
 

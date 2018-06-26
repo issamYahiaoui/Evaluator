@@ -6,7 +6,7 @@
 
 </head>
 <body>
-<div layout:fragment="content">
+<form layout:fragment="content" >
     <div class="m-portlet m-portlet--brand m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
          data-portlet="true" id="m_portlet_tools_1" style="">
         <div class="m-portlet__head">
@@ -179,7 +179,7 @@
                                             <i class="fa flaticon-medical" ></i>
                                               </span>
                                          </a>
-                                         <a th:href="'/assets/files/'+ ${file.getUrl()}" class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
+                                         <a onclick='triggerPdf()' th:attr="name=${file.getUrl()}"  class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
 															<span>
 																<i class="fa fa-cloud-download"></i>
 																<span th:text="${file.getUrl()}">
@@ -191,11 +191,19 @@
 
                                     </td>
                                     <td class="center">
-                                        <label class="m-checkbox m-checkbox--state-success">
-                                            <input th:checked="req.valid" type="checkbox">
+                                        <form th:action="'/commission/validateRequirement/'+ ${req.id} + '/' + ${folder.getId()}" method="post">
+                                            <label class="m-checkbox m-checkbox--state-success">
+                                                <button  th:if="${!req.getValid()}" type="submit" class="btn btn-outline-success m-btn m-btn--icon btn-lg m-btn--icon-only m-btn--pill m-btn--air">
+                                                    <i class="fa flaticon-interface-1"></i>
+                                                </button>
+                                                <input  th:value="${applicant.getId()}" type="text" hidden name="applicant_id">
 
-                                            <span></span>
-                                        </label>
+                                                <input    th:checked="${req.getValid()}" type="checkbox">
+
+                                                <span></span>
+                                            </label>
+                                        </form>
+
                                     </td>
 
                                 </tr>
@@ -280,7 +288,7 @@
                                         <td th:text="${req.getName()}"></td>
                                         <td>
                                             <th:block th:each="file  : ${req.getAttachments()}">
-                                                <a onclick="showPdf(''+${file.getUrl()}+'')"   class="btn btn-outline-danger btn-sm tm-btn m-btn--icon m-btn--pill"
+                                                <a onclick='triggerPdf()' th:attr="name=${file.getUrl()}"   class="btn btn-outline-danger btn-sm tm-btn m-btn--icon m-btn--pill"
 
                                                    data-toggle="modal" data-target="#preview" >
                                                     <a th:href="'/assets/files/'+ ${file.getUrl()}" class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
@@ -295,11 +303,17 @@
 
                                         </td>
                                         <td class="center">
-                                            <label class="m-checkbox m-checkbox--state-success">
-                                                <input type="checkbox">
+                                            <form th:action="'/commission/validateRequirement/'+ ${req.id} + '/' + ${folder.getId()}" method="post">
+                                                <label class="m-checkbox m-checkbox--state-success">
+                                                    <button  th:if="${!req.getValid()}" type="submit" class="btn btn-outline-success m-btn m-btn--icon btn-lg m-btn--icon-only m-btn--pill m-btn--air">
+                                                        <i class="fa flaticon-interface-1"></i>
+                                                    </button>
+                                                    <input  th:value="${applicant.getId()}" type="text" hidden name="applicant_id">
+                                                    <input    th:checked="${req.getValid()}" type="checkbox">
 
-                                                <span></span>
-                                            </label>
+                                                    <span></span>
+                                                </label>
+                                            </form>
                                         </td>
 
                                     </tr>
@@ -380,7 +394,7 @@
                                         <td th:text="${req.getName()}"></td>
                                         <td>
                                             <th:block th:each="file  : ${req.getAttachments()}">
-                                                <a onclick="showPdf(''+${file.getUrl()}+'')"   class="btn btn-outline-danger btn-sm tm-btn m-btn--icon m-btn--pill"
+                                                <a onclick='triggerPdf()' th:attr="name=${file.getUrl()}"   class="btn btn-outline-danger btn-sm tm-btn m-btn--icon m-btn--pill"
 
                                                    data-toggle="modal" data-target="#preview" >
                                                     <a th:href="'/assets/files/'+ ${file.getUrl()}" class="btn btn-outline-primary 	btn-sm 	m-btn m-btn--icon m-btn--pill" download>
@@ -396,11 +410,17 @@
 
                                         </td>
                                         <td class="center">
-                                            <label class="m-checkbox m-checkbox--state-success">
-                                                <input type="checkbox">
+                                            <form th:action="'/commission/validateRequirement/'+ ${req.id} + '/' + ${folder.getId()}" method="post">
+                                                <label class="m-checkbox m-checkbox--state-success">
+                                                    <button  th:if="${!req.getValid()}" type="submit" class="btn btn-outline-success m-btn m-btn--icon btn-lg m-btn--icon-only m-btn--pill m-btn--air">
+                                                        <i class="fa flaticon-interface-1"></i>
+                                                    </button>
+                                                    <input    th:checked="${req.getValid()}" type="checkbox">
+                                                    <input  th:value="${applicant.getId()}" type="text" hidden name="applicant_id">
 
-                                                <span></span>
-                                            </label>
+                                                    <span></span>
+                                                </label>
+                                            </form>
                                         </td>
 
                                     </tr>
@@ -426,9 +446,35 @@
             </div>
         </div>
 
+
+
+
+
+
     </div>
 
+    <div class="m-portlet__foot m-portlet__foot--fit">
+        <div class="m-form__actions m-form__actions--right">
+            <button type="submit" class="btn btn-success ">
+                CONFIRMER
+            </button>
+            <button type="reset" class="btn btn-secondary">
+                Cancel
+            </button>
+        </div>
+    </div>
+    <div class="modal fade" id="preview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div id="pdfContent" >
 
+
+
+            </div>
+        </div>
+    </div>
+
+</form>
     <!--
     <div class="m-portlet m-portlet--success m-portlet--head-solid-bg m-portlet--head-sm m-portlet--collapse"
          data-portlet="true" id="m_portlet_tools_2" style="">
@@ -544,5 +590,3 @@
 
     </div>
     -->
-
-</div>

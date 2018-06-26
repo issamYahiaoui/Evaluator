@@ -9,7 +9,9 @@ import java.util.Set;
 public class Requirement {
 
 
-
+    public Requirement(){
+        this.setValid(false);
+    }
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "requirement_id")

@@ -1,54 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spring-boot-web-thymeleaf:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bb0daeee-3f3a-4609-b166-11df77a7ec21" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/AttachmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/spring_boot_web_thymeleaf_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Evaluation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/EvaluationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/ValidationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/auth/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Applicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Applicant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Requirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Requirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/ApplicantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/ApplicantRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/EtablissementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/EtablissementRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/RequirementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/RequirementRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/SpecialityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/SpecialityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/service/FolderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/service/FolderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/service/StorageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/service/StorageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/files/a.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/files/b.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/files/c.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/files/d.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/files.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/files.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/administrative-folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/administrative-folder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/applicant-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/applicant-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/autres-folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/autres-folder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/folder.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/scientific-folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/scientific-folder.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/stats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/workspace/commission/applicant-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/workspace/commission/applicant-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/workspace/commission/show-folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/workspace/commission/show-folder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/auth/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/auth/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/auth/service/SeederServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/auth/service/SeederServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/Controllers/ApplicantController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/Controllers/ApplicantController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/Controllers/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/Controllers/CommissionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/Controllers/CommissionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/model/Requirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/model/Requirement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/repository/EtablissementRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/repository/EtablissementRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/repository/RequirementRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/repository/RequirementRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/repository/SpecialityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/repository/SpecialityRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/service/StorageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codebros/evaluator/workspace/service/StorageServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/files/a.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/files/b.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/files/c.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assets/files/d.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/assets/js/files.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/assets/js/files.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/uploadForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/uploadForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/administrative-folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/administrative-folder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/applicant-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/applicant-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/folder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/scientific-folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/scientific-folder.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/workspace/applicant/stats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/workspace/commission/show-folder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/workspace/commission/show-folder.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat-logs/logs/access_log.2018-06-07.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat-logs/logs/access_log.2018-06-07.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -109,57 +89,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="show-folder.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/commission/show-folder.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="197" column="48" lean-forward="true" selection-start-line="197" selection-start-column="48" selection-end-line="197" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Requirement.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Requirement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-              <folding>
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeederServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommissionController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="files.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/files.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="54" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application" pinned="false" current-in-tab="false">
-        <entry file="das://11e53ede-1a22-49cd-b450-0f707c3e28d5/database/evaluator/schema/public/table/application">
+      <file leaf-file-name="folder_requirement" pinned="false" current-in-tab="false">
+        <entry file="das://11e53ede-1a22-49cd-b450-0f707c3e28d5/database/evaluator/schema/public/table/folder_requirement">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -167,11 +98,93 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/FileController.java">
+      <file leaf-file-name="administrative-folder.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/administrative-folder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
+            <state relative-caret-position="391">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#span#0;n#form#0;n#div#0;n#th:block#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="files.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/files.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="897">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommissionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1863">
+              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show-folder.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/commission/show-folder.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10925">
+              <caret line="475" selection-start-line="475" selection-end-line="475" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="folder.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/folder.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1771">
+              <caret line="184" column="10" selection-start-line="175" selection-start-column="3" selection-end-line="184" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicant-form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/applicant-form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3680">
+              <caret line="160" column="3" selection-start-line="160" selection-start-column="3" selection-end-line="162" selection-end-column="10" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicantController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2300">
+              <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -190,6 +203,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>files</find>
+      <find>form</find>
+      <find>fl</find>
+      <find>succ</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,19 +240,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/service/StorageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/FileController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/administrative-folder.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/assets/js/files.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/autres-folder.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/scientific-folder.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/stats.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/service/FolderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/ApplicantRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/commission/applicant-list.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/applicant-form.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/commission/show-folder.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Requirement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Evaluation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/EvaluationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/ValidationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Validation.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/autres-folder.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/scientific-folder.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/administrative-folder.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/stats.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/assets/js/files.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/workspace/commission/show-folder.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -259,7 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -267,6 +287,24 @@
             <path>
               <item name="spring-boot-web-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
               <item name="Evaluator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-web-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evaluator" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-web-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evaluator" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-web-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evaluator" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="spring_boot_web_thymeleaf_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-web-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
@@ -414,6 +452,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-web-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evaluator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-web-thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Evaluator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -477,6 +533,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -488,13 +545,16 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="Requ&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/model/Requirement.java&#10;files&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/static/assets/js/files.js&#10;sho&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/show-folder.html&#10;seede&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java&#10;co&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java&#10;file&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/FileController.java&#10;files.&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/static/assets/js/files.js&#10;admini&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/administrative-folder.html&#10;applica&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/applicant-list.html&#10;applicant-fo&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/applicant-form.html&#10;application&#9;PSI&#9;JAVA://com.codebros.evaluator.workspace.model.Application&#10;applicantRep&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/ApplicantRepository.java&#10;applic&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/applicant-list.html&#10;show-&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/show-folder.html&#10;folderSer&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/service/FolderService.java&#10;see&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java&#10;admin&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/administrative-folder.html&#10;applicant-&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/applicant-list.html&#10;applicant/sta&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/stats.html&#10;folder&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/folder.html&#10;appl&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java&#10;fileC&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/FileController.java&#10;file.&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/static/assets/js/files.js&#10;applicant-form&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/applicant-form.html&#10;userC&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/controller/UserController.java&#10;pplicant&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/model/Applicant.java&#10;etabli&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/EtablissementRepository.java&#10;specia&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/SpecialityRepository.java&#10;req&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/RequirementRepository.java&#10;admi&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/administrative-folder.html&#10;fold&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/folder.html&#10;secu&#9;PSI&#9;JAVA://com.codebros.evaluator.workspace.Config.SecurityConfig&#10;seed&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java&#10;seeder&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java&#10;folderS&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/service/FolderService.java&#10;folders&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/service/FolderServiceImpl.java&#10;Folder&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/model/Folder.java&#10;Applica&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/ApplicantRepository.java&#10;userS&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/UserServiceImpl.java&#10;folderSe&#9;PSI&#9;JAVA://com.codebros.evaluator.workspace.service.FolderServiceImpl&#10;folderRe&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/FolderRepository.java&#10;applicant&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java" />
+    <property name="SearchEverywhereHistoryKey" value="show&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/show-folder.html&#10;appli&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/application.properties&#10;com&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java&#10;fold&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/folder.html&#10;admin&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/administrative-folder.html&#10;sh&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/show-folder.html&#10;ow&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/show-folder.html&#10;admi&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/administrative-folder.html&#10;file&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/static/assets/js/files.js&#10;admini&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/administrative-folder.html&#10;commis&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java&#10;fileC&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/FileController.java&#10;Com&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java&#10;Requ&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/model/Requirement.java&#10;files&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/static/assets/js/files.js&#10;sho&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/show-folder.html&#10;seede&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java&#10;co&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java&#10;files.&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/static/assets/js/files.js&#10;applica&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/applicant-list.html&#10;applicant-fo&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/applicant-form.html&#10;application&#9;PSI&#9;JAVA://com.codebros.evaluator.workspace.model.Application&#10;applicantRep&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/ApplicantRepository.java&#10;applic&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/applicant-list.html&#10;show-&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/show-folder.html&#10;folderSer&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/service/FolderService.java&#10;see&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java&#10;applicant-&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/commission/applicant-list.html&#10;applicant/sta&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/stats.html&#10;folder&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/folder.html&#10;appl&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java&#10;file.&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/static/assets/js/files.js&#10;applicant-form&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/resources/templates/workspace/applicant/applicant-form.html&#10;userC&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/controller/UserController.java&#10;pplicant&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/model/Applicant.java&#10;etabli&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/EtablissementRepository.java&#10;specia&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/SpecialityRepository.java&#10;req&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/RequirementRepository.java&#10;secu&#9;PSI&#9;JAVA://com.codebros.evaluator.workspace.Config.SecurityConfig&#10;seed&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java&#10;seeder&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/SeederServiceImpl.java&#10;folderS&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/service/FolderService.java&#10;folders&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/service/FolderServiceImpl.java&#10;Folder&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/model/Folder.java&#10;Applica&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/ApplicantRepository.java&#10;userS&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/auth/service/UserServiceImpl.java&#10;folderSe&#9;PSI&#9;JAVA://com.codebros.evaluator.workspace.service.FolderServiceImpl&#10;folderRe&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/repository/FolderRepository.java&#10;applicant&#9;FILE&#9;file:///Users/engineer/dev/java/PROJET_2CS/code/Evaluator/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -575,16 +635,18 @@
       <updated>1528218289563</updated>
       <workItem from="1528218290929" duration="1047000" />
       <workItem from="1528219725472" duration="18914000" />
-      <workItem from="1528334401899" duration="19902000" />
+      <workItem from="1528334401899" duration="25780000" />
+      <workItem from="1528951017943" duration="639000" />
+      <workItem from="1529875611705" duration="1449000" />
+      <workItem from="1529904552120" duration="676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39863000" />
+    <option name="totallyTimeSpent" value="48505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -603,33 +665,31 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40049443" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40049443" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="right" id="Coverage" order="3" sideWeight="0.50276244" side_tool="true" weight="0.37553647" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32880098" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32880098" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32880098" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36266094" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="3" sideWeight="0.50276244" side_tool="true" weight="0.37553647" />
+      <window_info anchor="bottom" id="Database Console" order="7" visible="true" weight="0.32880098" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32880098" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38689741" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32880098" />
-      <window_info id="Image Layers" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32880098" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38689741" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -637,15 +697,16 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32880098" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32880098" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Learn" order="7" />
       <window_info anchor="right" id="Database" order="6" sideWeight="0.4990792" weight="0.37553647" />
@@ -656,8 +717,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50092083" side_tool="true" weight="0.2911302" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39925835" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39925835" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,79 +729,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Speciality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/auth/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Folder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#1122#1135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/auth/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/service/FolderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/auth/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="66" column="64" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://11e53ede-1a22-49cd-b450-0f707c3e28d5/database/evaluator/schema/public/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/administratif.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="22" selection-end-line="33" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#th:block#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,30 +757,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/AttachementRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="1" lean-forward="true" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Attachment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/AttachementRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/AttachmentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,10 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
           <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -830,16 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/FolderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/ApplicationRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -868,55 +828,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/folder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="92" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="92" />
-          <folding>
-            <element signature="n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://11e53ede-1a22-49cd-b450-0f707c3e28d5/database/evaluator/schema/public/table/attachment">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/autres-folder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#th:block#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/scientific-folder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#th:block#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/stats.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="67" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -931,9 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -951,51 +863,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="96" column="38" lean-forward="true" selection-start-line="96" selection-start-column="38" selection-end-line="96" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/applicant-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/administrative-folder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#span#0;n#form#0;n#div#0;n#th:block#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/commission/applicant-list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="92" column="29" lean-forward="true" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="174" column="9" lean-forward="true" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1020,20 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://11e53ede-1a22-49cd-b450-0f707c3e28d5/database/evaluator/schema/public/table/requirement">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://11e53ede-1a22-49cd-b450-0f707c3e28d5/database/evaluator/schema/public/table/folder_requirement">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://11e53ede-1a22-49cd-b450-0f707c3e28d5/database/evaluator/schema/public/table/folder">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1048,30 +905,268 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/files.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/FileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="54" selection-end-column="45" />
+        <state relative-caret-position="201">
+          <caret line="181" column="7" lean-forward="true" selection-start-line="181" selection-start-column="7" selection-end-line="181" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/commission/show-folder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="197" column="48" lean-forward="true" selection-start-line="197" selection-start-column="48" selection-end-line="197" selection-end-column="48" />
+    <entry file="das://11e53ede-1a22-49cd-b450-0f707c3e28d5/database/evaluator/schema/public/table/requirement">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Requirement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="-262">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Folder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Etablissement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="126" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Attachment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Evaluation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="52" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/FolderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/EvaluationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/repository/ValidationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/model/Validation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/autres-folder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/scientific-folder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/stats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/administrative-folder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#form#0;n#div#0;n#th:block#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/folder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="184" column="10" selection-start-line="175" selection-start-column="3" selection-end-line="184" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/applicant/applicant-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3680">
+          <caret line="160" column="3" selection-start-line="160" selection-start-column="3" selection-end-line="162" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/ApplicantController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codebros/evaluator/workspace/Controllers/CommissionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://11e53ede-1a22-49cd-b450-0f707c3e28d5/database/evaluator/schema/public/table/folder_requirement">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/workspace/commission/show-folder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10925">
+          <caret line="475" selection-start-line="475" selection-end-line="475" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/assets/js/files.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>spring-boot-web-thymeleaf:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spring-boot-web-thymeleaf</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
